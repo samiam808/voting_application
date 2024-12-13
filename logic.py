@@ -30,7 +30,7 @@ class VotingLogic:
         Check if a voter with the given NUID has already voted.
 
         Returns:
-            bool: True if the voter has already voted, False otherwise.
+            bool: If the user already voted returns True, otherwise returns False
         """
         with open(self.csv_file_path, 'r') as file:
             vote_records = csv.reader(file)
